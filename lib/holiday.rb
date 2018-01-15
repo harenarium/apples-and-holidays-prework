@@ -69,7 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
     }
 
   def formatting(input)
-    array = input.to_s.split(" ","_")
+    array = input.to_s.split("_")
     array.each {|x| x.capitalize!}
     array.join(" ")
   end
