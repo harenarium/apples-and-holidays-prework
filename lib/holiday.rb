@@ -63,7 +63,8 @@ def all_supplies_in_holidays(holiday_hash)
     v.each {|k2,v2|
       puts formatting(k2)+":"
       v2.each {|x|
-      puts x}
+        print x
+      }
     }
   }
   # iterate through holiday_hash and print items such that your readout resembles:
