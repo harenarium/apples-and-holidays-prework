@@ -77,9 +77,9 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each {|k,v|
     puts formatting(k) + ":"
     v.each {|k2,v2|
-      print formatting(k2)+": "
+      print "  "+formatting(k2)+": "
       v2.each_with_index {|x,i|
-        if i = v2.length - 1
+        if i == v2.length - 1
           puts x
         else
           print x + ", "
