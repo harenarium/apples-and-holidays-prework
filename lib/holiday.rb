@@ -63,7 +63,7 @@ def all_supplies_in_holidays(holiday_hash)
     v.each {|k2,v2|
       puts formatting(k2)+":"
       v2.each {|x|
-        print x
+        puts x
       }
     }
   }
@@ -74,21 +74,21 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  {
-    :winter => {
-      :christmas => ["Lights", "Wreath"],
-      :new_years => ["Party Hats"]
-    },
-    :summer => {
-      :fourth_of_july => ["Fireworks", "BBQ"]
-    },
-    :fall => {
-      :thanksgiving => ["Turkey"]
-    },
-    :spring => {
-      :memorial_day => ["BBQ"]
-    }
-  }
+  # {
+  #   :winter => {
+  #     :christmas => ["Lights", "Wreath"],
+  #     :new_years => ["Party Hats"]
+  #   },
+  #   :summer => {
+  #     :fourth_of_july => ["Fireworks", "BBQ"]
+  #   },
+  #   :fall => {
+  #     :thanksgiving => ["Turkey"]
+  #   },
+  #   :spring => {
+  #     :memorial_day => ["BBQ"]
+  #   }
+  # }
 
 end
 
