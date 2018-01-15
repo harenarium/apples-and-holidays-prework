@@ -82,11 +82,27 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   array = []
   holiday_hash.each {|season, hash|
-    hash.each{|holiday, array|
-      if array.any? {|x| x="BBQ"}
+    hash.each{|holiday, supplies|
+      if supplies.find {|x| x="BBQ"} != nil
         array<<holiday
       end
     }
   }
   array
 end
+
+{
+  :winter => {
+    :christmas => ["Lights", "Wreath"],
+    :new_years => ["Party Hats"]
+  },
+  :summer => {
+    :fourth_of_july => ["Fireworks", "BBQ"]
+  },
+  :fall => {
+    :thanksgiving => ["Turkey"]
+  },
+  :spring => {
+    :memorial_day => ["BBQ"]
+  }
+}
